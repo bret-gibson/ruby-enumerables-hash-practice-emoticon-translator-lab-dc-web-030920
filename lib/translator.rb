@@ -18,7 +18,7 @@ def get_japanese_emoticon(path, english)
   library[:get_emoticon].each do |k, v|
     if k.include?(english)
       returnVal = v
-    else 
+    else
       returnVal = "Sorry, that emoticon was not found"
   end
   return returnVal
