@@ -23,7 +23,6 @@ def get_japanese_emoticon(english)
         library[k][v]
       end
     end
-
 end
 
 def get_english_meaning
