@@ -6,6 +6,7 @@ def load_library(path)
   library = YAML.load_file(path)
   lib_hash = {:get_meaning => {}, :get_emoticon => {}}
   library.each do |k, v|
+    binding.pry
     lib_hash[:get_meaning][v[1]] = k
     lib_hash[:get_emoticon][v[0]] = v[1]
   end
