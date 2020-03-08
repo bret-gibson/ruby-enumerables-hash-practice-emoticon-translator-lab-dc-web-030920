@@ -31,7 +31,7 @@ def get_english_meaning(path, japanese)
   returnVal = nil
   library[:get_meaning].each do |k, v|
     binding.pry
-    if k.include?(english)
+    if k.include?(japanese)
       returnVal = v
     end
   end
