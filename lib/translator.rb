@@ -15,8 +15,11 @@ end
 def get_japanese_emoticon(path, english)
   library = load_library(path)
   library.each do |k, v|
-    binding.pry
-    puts "hello"
+    if k = :get_emoticon
+      binding.pry
+      if library[k].include?(english)
+        library[k][v]
+      end
     end
 end
 
