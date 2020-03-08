@@ -14,6 +14,7 @@ end
 
 def get_japanese_emoticon(path, english)
   library = load_library(path)
+  returnVal = nil
   library[:get_emoticon].each do |k, v|
     if english == k
       puts v
