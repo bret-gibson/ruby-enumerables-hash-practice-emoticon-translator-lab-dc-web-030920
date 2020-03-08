@@ -14,12 +14,12 @@ end
 
 def get_japanese_emoticon(path, english)
   library = load_library(path)
-  returnVal = ""
+  returnVal = nil
   library[:get_emoticon].each do |k, v|
     if english == k
       returnVal = v
     end
-    if
+    if response = nil
       returnVal = "Sorry, that emoticon was not found"
     end
   end
