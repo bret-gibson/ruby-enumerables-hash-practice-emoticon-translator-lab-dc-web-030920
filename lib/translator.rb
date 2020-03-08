@@ -16,9 +16,7 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(english)
-  path = './lib/emoticons.yml'
   library = load_library(path)
-  puts library[:angel]
 end
 
 def get_english_meaning
