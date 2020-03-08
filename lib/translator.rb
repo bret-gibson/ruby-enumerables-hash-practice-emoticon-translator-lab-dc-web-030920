@@ -26,7 +26,7 @@ def get_japanese_emoticon(path, english)
   return returnVal
 end
 
-def get_english_meaning(path, english)
+def get_english_meaning(path, japanese)
   library = load_library(path)
   returnVal = nil
   library[:get_emoticon].each do |k, v|
