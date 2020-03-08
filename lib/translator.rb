@@ -16,6 +16,11 @@ def get_japanese_emoticon(path, english)
   library = load_library(path)
   library[:get_emoticon].each do |k, v|
     binding.pry
+    if english == k
+      return v
+    else
+      return nil
+    end
   end
 end
 
