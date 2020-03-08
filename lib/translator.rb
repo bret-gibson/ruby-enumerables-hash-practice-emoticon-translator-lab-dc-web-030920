@@ -19,9 +19,7 @@ def get_japanese_emoticon(path, english)
     if english == k
       returnVal = v
     end
-    if returnVal = nil
-      returnVal = "Sorry, that emoticon was not found"
-    end
+
   end
 
   return returnVal
