@@ -22,7 +22,7 @@ def get_japanese_emoticon(path, english)
     if
       returnVal = "Sorry, that emoticon was not found"
     end
-  end
+  
   end
   return returnVal
 end
