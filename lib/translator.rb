@@ -29,7 +29,7 @@ end
 def get_english_meaning(path, japanese)
   library = load_library(path)
   returnVal = nil
-  library[:get_emoticon].each do |k, v|
+  library.each do |k, v|
     binding.pry
     if k.include?(english)
       returnVal = v
