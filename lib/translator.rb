@@ -20,6 +20,7 @@ def get_japanese_emoticon(path, english)
       returnVal = v
     end
   end
+  return returnVal
 end
 
 def get_english_meaning
