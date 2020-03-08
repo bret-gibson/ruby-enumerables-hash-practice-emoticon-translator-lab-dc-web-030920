@@ -14,13 +14,13 @@ end
 
 def get_japanese_emoticon(path, english)
   library = load_library(path)
-  returnVal = nil
+  returnVal = ""
   library[:get_emoticon].each do |k, v|
     if english == k
       puts v
-      return v
+      returnVal = v
     else
-      return nil
+      returnVal = nil
     end
   end
 end
