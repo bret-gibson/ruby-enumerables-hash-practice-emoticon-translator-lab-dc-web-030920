@@ -20,6 +20,7 @@ def get_japanese_emoticon(english)
   library.each do |k, v|
     if k = :get_emoticon
       if library[k].include?(english)
+        return library[k][v]
 
 end
 
