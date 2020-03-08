@@ -12,7 +12,7 @@ def load_library(path)
   return lib_hash
 end
 
-def get_japanese_emoticon(english)
+def get_japanese_emoticon(path, english)
   library = load_library(path)
   library.each do |k, v|
     binding.pry
