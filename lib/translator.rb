@@ -18,8 +18,7 @@ def get_japanese_emoticon(path, english)
   library[:get_emoticon].each do |k, v|
     if english == k
       returnVal = v
-    else
-      returnVal = nil
+
     end
   end
   return returnVal
